@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+}
+
+.bg-video {
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    width: 70%;
+    min-height: 66px;
+    padding: 8px 10px;
+    background: rgba(0, 0, 0, .32);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 30px;
+    color: hsla(0, 0%, 100%, .64);
+    border-radius: 64px;
+}
+
+.nav i{
+    display: none;
+}
+
+.nav img {
+    height: 25px;
+    padding-left: 25px;
+}
+
+.nav-items {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nav-items p:hover {
+    color: white;
+}
+
+.nav-items button {
+    padding: 20px;
+    border-radius: 31px;
+    border: none;
+    font-weight: 700;
+}
+
+.video-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    left: 98px;
+    bottom: 200px;
+    gap: 20px;
+}
+
+.logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-family: Flowers Of Nineties, Georgia, serif;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.btn {
+    background: rgba(0, 0, 0, .32);
+    padding: 20px;
+    border-radius: 31px;
+    border: none;
+    font-weight: 700;
+    color: #fff;
+}
+
+#para {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.scroll {
+    position: absolute;
+    bottom: 100px;
+    color: white;
+    font-size: 13px;
+
+}
+
+.qr {
+    position: fixed;
+    right: 98px;
+    bottom: 160px;
+    width: 136px;
+    min-height: 166px;
+    padding: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: rgba(0, 0, 0, .4);
+    border-radius: 12px;
+    color: white;
+    z-index: 10;
+}
+
+.qr i {
+    padding-left: 8px;
+}
+
+.highlight {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    position: relative;
+    margin-top: -80px;
+    padding: 80px 20px;
+    background-color: #e8f1f3;
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight p {
+    width: 70%;
+    font-family: Flowers Of Nineties, Georgia, serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #cdd3d6;
+    text-align: center;
+}
+
+.video-section {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.video-section-text {
+    width: 70%;
+    min-height: 66px;
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 100px;
+    color: white;
+    border-radius: 64px;
+    gap: 10px;
+}
+
+.video-section-text h2 {
+    font-family: Flowers Of Nineties, Georgia, serif;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.video-section-text p {
+    font-family: 16px;
+    font-weight: 400;
+}
+
+.love-us {
+    position: relative;
+    margin-top: -80px;
+    background-color: #e7ecef;
+    height: 80vh;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.love-us-text {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.love-us-text h1 {
+    font-family: Flowers Of Nineties, Georgia, serif;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.love-us-text p {
+    color: #555c4d;
+    font-size: clamp(16px, 1.26vw, 19px);
+    font-weight: 400;
+}
+
+.love-us img {
+    height: 150px;
+    width: 400px;
+}
+
+.love-us-icons {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.icons-appstore {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.love-us-icons img {
+    height: 32px;
+    width: 32px;
+}
+
+.icons-appstore-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icons-appstore-text img {
+    height: 20px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.icons-playstore {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.icons-btn {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px;
+    border-radius: 54px;
+    background: hsla(0, 0%, 100%, .5);
+}
+
+.icons-btn p {
+    color: #212121;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.banks {
+    position: relative;
+
+    background-color: #e7ecef;
+    height: 60vh;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.bank-text {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bank-text h1 {
+    font-family: Flowers Of Nineties, Georgia, serif;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.bank-text p {
+    color: #555c4d;
+    font-size: clamp(16px, 1.26vw, 19px);
+    font-weight: 400;
+}
+
+.bank-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.bank-icons img {
+  flex: 1;               
+  max-width: 200px;     
+  min-height: 66px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.news {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+}
+
+.news-slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.featured {
+    width: 300px;
+    min-width: 300px;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    
+    padding-left: 105px;
+
+    background: white;
+
+    position: relative;
+    z-index: 5;
+}
+
+.featured h3 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.slider {
+    width: calc(100% - 300px);
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    width: max-content;
+
+    animation: logoSlide 30s linear infinite;
+}
+
+.slide img {
+    width: auto;
+    height: 60px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+@keyframes logoSlide {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    * {
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.bg-video {
+    height: 105vh;
+    width: 100%;
+
+}
+
+.nav {
+        min-height: 52px;
+        width: 90%;
+    }
+
+    .nav p{
+        display: none;
+    }
+    .nav button {
+        display: none;
+    }
+    .nav i {
+        display: block;
+    }
+.video-text{
+        left:16px;
+        bottom:112px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+}
+.scroll{
+    bottom:60px}
+}
+.logo-text {
+flex-direction: column;
+align-items: flex-start;
+    font-size: 20px;
+    font-weight: 800;
+}
+.qr {
+    display: none;
+}
+.logo-text img {
+    height: 20px;
+    width: 60px;
+}
+    .highlight {
+    position: relative;
+    margin-top: -40px;
+}
+
+
+   .highlight p {
+    width: 100%;
+    font-size: 28px;
+
+}
+.video-section-text h2{
+    font-size: 24px;
+
+}
+.video-section-text p {
+    font-size: 16px;
+}
+.love-us {
+        height: auto;
+        min-height: 650px;
+        margin-top: -40px;
+
+        padding: 60px 20px;
+
+        gap: 20px;
+    }
+
+    .love-us-text {
+        width: 100%;
+        gap: 10px;
+        text-align: center;
+    }
+    .love-us-icons {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .icons-playstore,
+    .icons-appstore {
+        width: 50%;
+    }
+
+    .icons-appstore-text {
+        gap: 6px;
+    }
+
+    .icons-appstore-text img {
+        width: 80px;
+        height: 18px;
+    }
+
+    .icons-btn {
+        width: 100px;
+        padding: 10px;
+        gap: 7px;
+    }
+
+    .icons-btn p {
+        font-size: 17px;
+    }
+
+    .icons-btn img {
+        width: 27px;
+        height: 27px;
+    }
+.banks {
+        height: auto;
+        min-height: 500px;
+
+        padding: 60px 20px;
+
+        gap: 25px;
+
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    .bank-text {
+        width: 100%;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .bank-text h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .bank-text p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .bank-icons {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .bank-icons img {
+        width: calc((100% - 24px) / 3);
+
+        min-width: 0;
+        min-height: 55px;
+
+        padding: 12px;
+
+        border-radius: 15px;
+    }
+
+    .news-slider {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+    .featured h3{
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .slide img {
+        height: 30px;
+    }
+}
