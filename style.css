@@ -15,6 +15,12 @@
     justify-content: center;
 }
 
+.bg-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .nav {
     width: 70%;
     min-height: 66px;
@@ -74,6 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     gap: 10px;
     color: #fff;
     font-family: Flowers Of Nineties, Georgia, serif;
@@ -158,6 +165,12 @@
     align-items: center;
     justify-content: center;
 
+}
+
+.video-section video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .video-section-text {
@@ -446,7 +459,7 @@ body {
 }
 .scroll{
     bottom:60px}
-}
+
 .logo-text {
 flex-direction: column;
 align-items: flex-start;
@@ -486,6 +499,11 @@ align-items: flex-start;
         padding: 60px 20px;
 
         gap: 20px;
+    }
+
+    .love-us img {
+        height: 120px;
+    width: 340px;
     }
 
     .love-us-text {
@@ -588,3 +606,246 @@ align-items: flex-start;
         height: 30px;
     }
 }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .bg-video {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .bg-video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .nav {
+        width: 85%;
+        min-height: 60px;
+        top: 25px;
+        padding: 8px 15px;
+    }
+
+    .nav img {
+        height: 23px;
+        padding-left: 15px;
+    }
+
+    .nav-items {
+        gap: 14px;
+        font-size: 14px;
+    }
+
+    .nav-items button {
+        padding: 15px 18px;
+    }
+
+
+    .video-text {
+        left: 50px;
+        bottom: 150px;
+        gap: 16px;
+    }
+
+    .logo-text {
+        font-size: 28px;
+    }
+
+    .logo-text img {
+        height: 24px;
+    }
+
+    #para {
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 16px 18px;
+    }
+
+    .scroll {
+        bottom: 70px;
+    }
+
+  
+    .qr {
+        right: 35px;
+        bottom: 100px;
+        width: 120px;
+        min-height: 150px;
+    }
+
+    .highlight {
+        margin-top: -60px;
+        height: auto;
+        min-height: 500px;
+        padding: 70px 40px;
+    }
+
+    .highlight p {
+        width: 85%;
+        font-size: 40px;
+    }
+
+
+    .video-section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-section video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .video-section-text {
+        width: 80%;
+        bottom: 70px;
+    }
+
+    .video-section-text h2 {
+        font-size: 30px;
+    }
+
+    .video-section-text p {
+        font-size: 15px;
+    }
+
+ 
+    .love-us {
+        height: auto;
+        min-height: 600px;
+        margin-top: -60px;
+        padding: 70px 40px;
+        gap: 25px;
+    }
+
+    .love-us-text {
+        width: 90%;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .love-us-text h1 {
+        font-size: 32px;
+    }
+
+    .love-us-text p {
+        font-size: 17px;
+    }
+
+    .love-us img {
+        width: 350px;
+        height: 130px;
+        object-fit: contain;
+    }
+
+    .love-us-icons {
+        gap: 25px;
+    }
+
+    .icons-playstore,
+    .icons-appstore {
+        width: 50%;
+    }
+.icons-appstore-text img{
+    width: 90px;
+    height: 90px;
+}
+ .icons-btn {
+        width: 150px;
+        height: 60px;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .icons-btn img {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
+
+    .icons-btn p {
+        font-size: 18px;
+    }
+
+   
+    .banks {
+        height: auto;
+        min-height: 450px;
+        padding: 60px 40px;
+        gap: 25px;
+    }
+
+    .bank-text {
+        width: 90%;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .bank-text h1 {
+        font-size: 32px;
+    }
+
+    .bank-text p {
+        font-size: 16px;
+    }
+
+    .bank-icons {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .bank-icons img {
+        max-width: 180px;
+        min-height: 60px;
+        padding: 15px;
+        border-radius: 18px;
+    }
+
+  
+    .news {
+        height: 130px;
+    }
+
+    .news-slider {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .featured {
+        width: 220px;
+        min-width: 220px;
+        padding-left: 40px;
+    }
+
+    .featured h3 {
+        font-size: 26px;
+    }
+
+    .slider {
+        width: calc(100% - 220px);
+        overflow: hidden;
+    }
+
+    .slide {
+        gap: 45px;
+    }
+
+    .slide img {
+        height: 45px;
+    }
+}
+
